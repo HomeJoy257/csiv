@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLY2VANS | Vuela, llega y recoge tu camper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="logo" href="#">FLY<span>2</span>VANS</a>
+      <nav>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#aeropuertos">Aeropuertos</a>
+        <a href="#flota">Flota</a>
+      </nav>
+      <a href="#reserva" class="btn-outline">Reserva</a>
+    </header>
+
+    <main>
+      <section class="hero" id="reserva">
+        <div class="hero-content">
+          <p class="eyebrow">Alquiler de camper en aeropuerto</p>
+          <h1>Vuela. Llega. <span>Recoge tu camper</span>. Empieza el viaje sin perder tiempo.</h1>
+          <p>
+            La experiencia FLY2VANS está diseñada para que aterrices y salgas conduciendo en minutos.
+            Sin desvíos, sin oficinas lejanas, sin esperas innecesarias.
+          </p>
+
+          <form class="booking-box">
+            <div>
+              <label for="aeropuerto">Aeropuerto</label>
+              <select id="aeropuerto" name="aeropuerto">
+                <option>Madrid - Barajas</option>
+                <option>Barcelona - El Prat</option>
+                <option>Málaga - Costa del Sol</option>
+              </select>
+            </div>
+            <div>
+              <label for="ida">Recogida</label>
+              <input id="ida" type="date" />
+            </div>
+            <div>
+              <label for="vuelta">Devolución</label>
+              <input id="vuelta" type="date" />
+            </div>
+            <button type="button">Buscar campers</button>
+          </form>
+
+          <ul class="trust-strip">
+            <li>✅ Recogida express en terminal</li>
+            <li>✅ Check-in 100% digital</li>
+            <li>✅ Asistencia 24/7 en ruta</li>
+          </ul>
+        </div>
+        <div class="hero-image" aria-hidden="true"></div>
+      </section>
+
+      <section class="steps" id="como-funciona">
+        <h2>Así de rápido empieza tu aventura</h2>
+        <div class="step-grid">
+          <article>
+            <p class="number">01</p>
+            <h3>Vuela</h3>
+            <p>Reserva online y llega al aeropuerto que te convenga.</p>
+          </article>
+          <article>
+            <p class="number">02</p>
+            <h3>Llega y recoge</h3>
+            <p>Te esperamos a pocos minutos de tu terminal con entrega ágil.</p>
+          </article>
+          <article>
+            <p class="number">03</p>
+            <h3>Arranca tu ruta</h3>
+            <p>Sube tus maletas y empieza el roadtrip desde el minuto uno.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="airports" id="aeropuertos">
+        <h2>Recogida directa en aeropuertos clave</h2>
+        <div class="airport-grid">
+          <article>
+            <h3>Madrid</h3>
+            <p>Operativa optimizada para llegadas nacionales e internacionales.</p>
+          </article>
+          <article>
+            <h3>Barcelona</h3>
+            <p>Acceso rápido para empezar ruta por costa, montaña o frontera.</p>
+          </article>
+          <article>
+            <h3>Málaga</h3>
+            <p>Perfecto para escapadas por Andalucía sin tiempos muertos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="fleet" id="flota">
+        <h2>Tu casa sobre ruedas, lista para salir</h2>
+        <div class="fleet-cards">
+          <article>
+            <p class="badge">Más reservada</p>
+            <h3>Urban Van</h3>
+            <p>Compacta, cómoda y perfecta para parejas que quieren moverse sin límites.</p>
+          </article>
+          <article>
+            <p class="badge">Familiar</p>
+            <h3>Adventure Van</h3>
+            <p>Espacio extra, cocina completa y autonomía para viajes de varios días.</p>
+          </article>
+          <article>
+            <p class="badge">Premium</p>
+            <h3>Explorer XL</h3>
+            <p>Máximo confort para rutas largas con todo incluido desde el aeropuerto.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>FLY2VANS · Vuela, llega, recoge y viaja.</p>
+    </footer>
+  </body>
+</html>
