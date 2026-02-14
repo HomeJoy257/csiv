@@ -1,0 +1,265 @@
+:root {
+  --bg: #f5f7fb;
+  --text: #142033;
+  --muted: #60708a;
+  --primary: #0a84ff;
+  --primary-dark: #0064c2;
+  --card: #ffffff;
+  --stroke: #dbe3f0;
+  --accent: #00c27a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.topbar {
+  width: min(1180px, 92vw);
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+nav {
+  display: flex;
+  gap: 1.3rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.btn-outline {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--stroke);
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  font-weight: 700;
+}
+
+main {
+  width: min(1180px, 92vw);
+  margin: 0 auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1rem;
+  background: var(--card);
+  border-radius: 26px;
+  border: 1px solid var(--stroke);
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(20, 32, 51, 0.08);
+}
+
+.hero-content {
+  padding: 2.2rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+h1 {
+  margin: 0.7rem 0 0.8rem;
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  line-height: 1.1;
+}
+
+h1 span {
+  color: var(--primary);
+}
+
+.hero-content > p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 56ch;
+}
+
+.booking-box {
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.65rem;
+  padding: 0.9rem;
+  border-radius: 16px;
+  border: 1px solid var(--stroke);
+  background: #f8faff;
+}
+
+.booking-box label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #445064;
+  margin-bottom: 0.35rem;
+}
+
+.booking-box select,
+.booking-box input,
+.booking-box button {
+  width: 100%;
+  border: 1px solid #ccd7ea;
+  border-radius: 10px;
+  padding: 0.7rem;
+  font-family: inherit;
+}
+
+.booking-box button {
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  align-self: end;
+  cursor: pointer;
+}
+
+.booking-box button:hover {
+  background: var(--primary-dark);
+}
+
+.trust-strip {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1rem;
+  color: #344056;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.hero-image {
+  min-height: 480px;
+  background-image: linear-gradient(20deg, rgba(6, 100, 194, 0.55), rgba(0, 194, 122, 0.25)),
+    url('https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.steps,
+.airports,
+.fleet {
+  margin-top: 3rem;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  margin-bottom: 1rem;
+}
+
+.step-grid,
+.airport-grid,
+.fleet-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.step-grid article,
+.airport-grid article,
+.fleet-cards article {
+  background: #fff;
+  border: 1px solid var(--stroke);
+  border-radius: 16px;
+  padding: 1.15rem;
+}
+
+.number {
+  margin: 0;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+article h3 {
+  margin: 0.45rem 0;
+}
+
+article p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+footer {
+  width: min(1180px, 92vw);
+  margin: 3rem auto 2rem;
+  text-align: center;
+  color: #7f8ca2;
+  font-weight: 600;
+}
+
+@media (max-width: 980px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    min-height: 320px;
+  }
+
+  .booking-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .topbar {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hero-content {
+    padding: 1.2rem;
+  }
+
+  .booking-box,
+  .step-grid,
+  .airport-grid,
+  .fleet-cards {
+    grid-template-columns: 1fr;
+  }
+}
